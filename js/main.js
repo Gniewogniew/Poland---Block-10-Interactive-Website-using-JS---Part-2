@@ -1,14 +1,14 @@
 $('#jabłko').click(function() {
-    $('<li class="new">').append("JABŁKO" + "<button class=delete>usuń</button>").prependTo('.items');
+    $('<li">').append("JABŁKO" + "<button class=delete>usuń</button>").prependTo('.items');
 });
 $('#gruszka').click(function() {
-    $('<li class="new">').append("GRUSZKA" + "<button class=delete>usuń</button>").prependTo('.items');
+    $('<li">').append("GRUSZKA" + "<button class=delete>usuń</button>").prependTo('.items');
 });
 $('#banan').click(function() {
-    $('<li class="new">').append("BANAN" + "<button class=delete>usuń</button>").prependTo('.items');
+    $('<li">').append("BANAN" + "<button class=delete>usuń</button>").prependTo('.items');
 });
 $('#kiwi').click(function() {
-    $('<li class="new">').append("KIWI" + "<button class=delete>usuń</button>").prependTo('.items');
+    $('<li">').append("KIWI" + "<button class=delete>usuń</button>").prependTo('.items');
 });
 
 var $items = $(".items");
