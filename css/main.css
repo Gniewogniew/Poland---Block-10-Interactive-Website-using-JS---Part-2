@@ -13,76 +13,68 @@ body{
 }
 .basket {
   float:right;  
-  display: inline;
   background-color: #1a88ff;
-  padding:70px;
+  padding:70px 120px 300px 120px;
+  min-width:220px;
 }
 .logo-icon{
   width:50px;
-  vertical-align: middle;
   float:left;
   padding-right:20px;
 }
-.drop {
-  font-size:30px;
+.basket h2 {
+  font-size:25px;
   font-family:Georgia;
-  line-height:50px;
+  float:left;
 }
 .items{
-  text-align:left;
-  padding-left:30px;
   font-size:22px;
 }
 button{
-  left : 15px;
-  position: relative;
   float:right;
+  position:relative;
+}
+.products{
+  margin: 20px;
+}
+.products button{
+  padding: 7px 30px;
+  font-size: 25px;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 14px;
+  background-color: #50B0EC; 
+  color:#000;  
+  margin-right:30px;
 }
 .fruit{
-  float:left;
-  padding-left: 90px;
-  padding-top:40px;
+  display: inline-block;
+  margin: 50px;
 }
 .fruit h2{
-  padding-left:55px;
-}
-.sell a{
-display: inline-block;
-text-decoration:none;
-padding: 6px 30px;
-font-size: 25px;
-line-height: 40px;
-text-align: center;
-cursor: pointer;
-border: 2px solid #000;
-border-radius: 14px;
-background-color: #50B0EC; 
-color:#000;  
-}
-.highlight {
-    background-color: cyan;
-    font-weight: bold;
+  margin-left:80px;
+  font-size:35px;
 }
 .news{
-  margin:500px;
   font-size:18px;
   background-color:#9933ff;
   padding:60px;
-  position:absolute;
+  margin:auto;
 }
 #input-msg{
   border:2px solid #737373;
   border-radius:15px;
-  min-width:700px;
+  min-width:400px;
   min-height:40px;
   font-size:15px;
 }
 #submit-btn{
-  padding: 10px 10px;
+  padding: 12px 12px;
   border:1px solid;
-  border-radius:15px;
-  font-size:14px;
+  border-radius:20px;
+  font-size:15px;
   cursor:pointer;
+  margin-right:1270px;
 }
 #msg{
   border-left: 2px solid #f2f2f2;
