@@ -31,6 +31,7 @@ body{
 }
 .items button{
   float:right;
+  cursor: pointer;
 }
 .products{
   margin: 20px;
@@ -53,8 +54,7 @@ body{
   border: 2px solid #000;
   border-radius: 14px;
   background-color: #50B0EC; 
-  color:#000;  
-
+  color:#000;
 }
 input {
   width: 20%;
