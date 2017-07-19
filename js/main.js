@@ -7,7 +7,10 @@ $('#gruszka').click(function() {
 $('#banan').click(function() {
     $('<li>').append("BANAN" + "<button class=delete>usuń</button>").prependTo('.items');
 });
-$('#kiwi').click(function() {
+$('#marchew').click(function() {
+    $('<li>').append("KIWI" + "<button class=delete>usuń</button>").prependTo('.items');
+});
+$('#ziemniak').click(function() {
     $('<li>').append("KIWI" + "<button class=delete>usuń</button>").prependTo('.items');
 });
 
