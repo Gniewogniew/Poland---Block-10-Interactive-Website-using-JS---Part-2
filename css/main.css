@@ -25,13 +25,13 @@ body{
 .basket h2 {
   font-size:25px;
   font-family:Georgia;
+  float:left;
 }
 .items{
   font-size:22px;
 }
-button{
+.items button{
   float:right;
-  position:relative;
 }
 .products{
   margin: 20px;
@@ -48,25 +48,30 @@ button{
   font-family:Bookman Old Style;
 }
 .products button{
-  padding: 7px 30px;
-  font-size: 25px;
+  padding: 10px;
+  font-size: 15px;
   cursor: pointer;
   border: 2px solid #000;
   border-radius: 14px;
   background-color: #50B0EC; 
   color:#000;  
-  margin-right:30px;
+
 }
-.item{
+input {
+  width: 20%;
+  margin-left:20px;
+  padding:11px;
+}
+.product{
   display: inline-block;
   margin: 50px;  
 }
-.item h4{
+.product h4{
   font-size:30px;
  margin-left:70px
 }
 .news{
-  font-size:18px;
+  font-size:20px;
   background-color:#9933ff;
   padding:60px;
   margin:auto;
@@ -86,7 +91,6 @@ button{
   cursor:pointer;
   margin-left: 15px;
   position: absolute;
-
 }
 #msg{
   border-left: 2px solid #f2f2f2;
