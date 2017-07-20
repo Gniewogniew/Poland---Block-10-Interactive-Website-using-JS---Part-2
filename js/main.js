@@ -1,5 +1,5 @@
-$('#ziemniak').click(function() {
-  $('<li>').append("Ziemniak"+"<button class=delete>usuń</button>").prependTo('.items');
+$('#Jabłko').click(function() {
+  $('<li>').append("Jabłko"+"<button class=delete>usuń</button>").prependTo('.items');
 });
 
 var $items = $(".items");
