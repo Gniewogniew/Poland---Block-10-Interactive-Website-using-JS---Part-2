@@ -5,6 +5,7 @@ $('#ziemniak').click(function() {
 var $items = $(".items");
  $items.on("click","li","button", function (){
   $(this).remove();
+});
 
 /* Funkcja do wiadomości */
 function wpis() {
