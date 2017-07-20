@@ -1,7 +1,7 @@
 
 
-var $items = $(".items");
-$items.on("click", "li", "button", function() {
+var items = $(".items");
+items.on("click", "li", "button", function() {
     $(this).remove();
 
 });
