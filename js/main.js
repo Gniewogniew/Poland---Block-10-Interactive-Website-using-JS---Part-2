@@ -1,3 +1,10 @@
+$('#ziemniak').click(function() {
+  $('<li>').append("Ziemniak"+"<button class=delete>usuń</button>").prependTo('.items');
+});
+
+var $items = $(".items");
+ $items.on("click","li","button", function (){
+  $(this).remove();
 
 /* Funkcja do wiadomości */
 function wpis() {
