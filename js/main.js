@@ -1,6 +1,3 @@
-$(".items li").click(function(){
-  $(this).remove();
-});
 
 /* Funkcja do wiadomości */
 function msg() {
