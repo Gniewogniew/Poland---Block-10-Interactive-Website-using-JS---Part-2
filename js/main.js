@@ -1,6 +1,6 @@
 
 /* Funkcja do wiadomości */
-function type() {
+function wpis() {
 
     $("#input-msg").keypress(function(event) {
         if (event.which == 13) {
@@ -14,4 +14,4 @@ function type() {
         $("#input-msg").val("");
     });
 }
-$(type);
+$(wpis);
