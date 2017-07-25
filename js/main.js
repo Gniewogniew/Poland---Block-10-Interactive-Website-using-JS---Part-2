@@ -1,25 +1,32 @@
-$('#Jabłko').click(function() {
-  $('<li>').append("Jabłko"+"<button class=delete>usuń</button>").prependTo('.items');
+function attachEventHandlers (){
+  $(".product button").click("click",(function(event){
+
+
+
+var $productType = $(".product button:target");
+    $productType.on("click", function(){
+    $(this).data("product");
 });
 
-var $items = $(".items");
- $items.on("click","li","button", function (){
-  $(this).remove();
-});
+var $inputQuantity = $("input").val(-"quantity");
+       $inputQuantity.on("click", function(){
+        $(this).val();
 
-/* Funkcja do wiadomości */
-function wpis() {
+       });
 
-    $("#input-msg").keypress(function(event) {
-        if (event.which == 13) {
-            $("#submit-btn").click();
-        }
-    });
+       item=$("<li></li>")
+  item.append($(this).data("product"));
+  item.append($(this).val());
 
-    $("#submit-btn").click(function() {
-        var message = $("#input-msg").val();
-        $("#msg").append("<p>" + message + "</p>");
-        $("#input-msg").val("");
-    });
+  item.appendTo($(".items"));
+
+}));
+
+
 }
-$(wpis);
+$(attachEventHandlers)
+
+
+
+ 
+
