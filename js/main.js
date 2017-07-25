@@ -8,7 +8,7 @@ var $productType = $(".product button:target");
     $(this).data("product");
 });
 
-var $inputQuantity = $("input").val(-"quantity");
+var $inputQuantity = $("input").find("id");
        $inputQuantity.on("click", function(){
         $(this).val();
 
