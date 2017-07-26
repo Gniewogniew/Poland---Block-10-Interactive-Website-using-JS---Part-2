@@ -1,32 +1,21 @@
 function attachEventHandlers (){
-  $(".product button").click("click",(function(event){
+  $(".products").click("click",(function(event){
 
+if (event.target.nodeName == "BUTTON"){
+console.log("Clicked", event.target.textContent);
 
+var productType = ("event.target.dataset.product");
+   
+var value = $("#" + productType + "-quantity")[0].value;
 
-var $productType = $(".product button:target");
-    $productType.on("click", function(){
-    $(this).data("product");
-});
-
-var $inputQuantity = $("input").find("id");
-       $inputQuantity.on("click", function(){
-        $(this).val();
-
-       });
-
-       item=$("<li></li>")
-  item.append($(this).data("product"));
-  item.append($(this).val());
+       item=$("<li></li>"+"<button>Delete</button>")
+  item.append("event.target.dataset.product");
+  item.append("value");
 
   item.appendTo($(".items"));
 
-}));
-
-
+};
+})) 
 }
+
 $(attachEventHandlers)
-
-
-
- 
-
