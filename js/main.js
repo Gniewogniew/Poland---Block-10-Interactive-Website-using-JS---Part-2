@@ -24,11 +24,11 @@ var basketClickHandler = function(event){
     }
 }
 
-var translateProducts = function(event){
-    if(event.target.nodeName == "BUTTON"){
-    "apple" : "Jabłka",
-    }
-}
+//  var translateProducts = function(event){
+//      if(event.target.nodeName == "BUTTON"){
+//      "apple" : "Jabłka",
+//      }
+//  }
 
 var newsClickHandler = function(event){
     
