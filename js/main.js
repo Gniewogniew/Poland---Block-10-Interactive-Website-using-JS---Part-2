@@ -3,7 +3,7 @@ function attachEventHandlers (){
   $(".items").click(basketClickHandler);
   $("#message-button").click(newsClickHandler);
   $("#message-input").keypress(inputTextClickHandler)
-  $(".products").click(translateProducts)
+//  $(".products").click(translateProducts)
 }
 
 var productsClickHandler = function(event){
