@@ -16,7 +16,7 @@ var productsClickHandler = function(event){
     "carrot" : "Marchewki",
     "onion" : "Cebula"
     };
-
+console.log(translationObject)
     var value = $("#" + productType + "-quantity")[0].value;
        item = $("<li><button>Usuń</button></li>")
        item.append(event.target.dataset.product + " ");
