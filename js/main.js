@@ -3,14 +3,16 @@ function attachEventHandlers (){
   $(".items").click(basketClickHandler);
   $("#message-button").click(newsClickHandler);
   $("#message-input").keypress(inputTextClickHandler)
-//  $(".products").click(translateProducts)
 }
 
 var productsClickHandler = function(event){
     if(event.target.nodeName == "BUTTON") {
     var productType = (event.target.dataset.product);   
     var value = $("#" + productType + "-quantity")[0].value;
-
+    var translationObject = {
+    "apple" : "Jabłka",
+    "banana" : "Banany"
+    }
        item = $("<li><button>Usuń</button></li>")
        item.append(event.target.dataset.product + " ");
        item.append(value);
@@ -23,12 +25,6 @@ var basketClickHandler = function(event){
     event.target.parentElement.remove();
     }
 }
-
-//  var translateProducts = function(event){
-//      if(event.target.nodeName == "BUTTON"){
-//      "apple" : "Jabłka",
-//      }
-//  }
 
 var newsClickHandler = function(event){
     
@@ -44,7 +40,6 @@ var newsClickHandler = function(event){
 var inputTextClickHandler = (function(event) {
         if (event.which == 13) {
             $("#message-button").click();
-
     }
 });
 
