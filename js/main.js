@@ -8,14 +8,14 @@ var productsClickHandler = function(event){
     if(event.target.nodeName == "BUTTON") {
         var productType = (event.target.dataset.product);
         var translationObject = {
-        "apple" : "Jabłka",
-        "banana" : "Banany",
-        "pear" : "Gruszki",
-        "potato" : "Ziemniaki",
-        "carrot" : "Marchewki",
-        "onion" : "Cebula"
+            "apple" : "Jabłka",
+            "banana" : "Banany",
+            "pear" : "Gruszki",
+            "potato" : "Ziemniaki",
+            "carrot" : "Marchewki",
+            "onion" : "Cebula"
 };
-var value = $("#" + productType + "-quantity")[0].value;
+       var value = $("#" + productType + "-quantity")[0].value;
        item = $("<li><button>Usuń</button></li>")
        item.append(translationObject[productType] + " ");
        item.append(value);
