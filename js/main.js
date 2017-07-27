@@ -14,7 +14,7 @@ var productsClickHandler = function(event){
             "potato" : "Ziemniaki",
             "carrot" : "Marchewki",
             "onion" : "Cebula"
-};
+       };
        var value = $("#" + productType + "-quantity")[0].value;
        item = $("<li><button>Usuń</button></li>")
        item.append(translationObject[productType] + " ");
