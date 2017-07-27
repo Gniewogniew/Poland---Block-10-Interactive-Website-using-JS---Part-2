@@ -7,25 +7,30 @@ function attachEventHandlers (){
 
 var productsClickHandler = function(event){
     if(event.target.nodeName == "BUTTON") {
-    var productType = (event.target.dataset.product);   
-    var value = $("#" + productType + "-quantity")[0].value;
+    var productType = (event.target.dataset.product);
     var translationObject = {
     "apple" : "Jabłka",
-    "banana" : "Banany"
-    }
+    "banana" : "Banany",
+    "pear" : "Gruszki",
+    "potato" : "Ziemniaki",
+    "carrot" : "Marchewki",
+    "onion" : "Cebula"
+    };
+
+    var value = $("#" + productType + "-quantity")[0].value;
        item = $("<li><button>Usuń</button></li>")
        item.append(event.target.dataset.product + " ");
        item.append(value);
        item.appendTo($(".items"));
-    }
 }
+    }
 
 var basketClickHandler = function(event){
     if(event.target.nodeName =="BUTTON"){
     event.target.parentElement.remove();
     }
 }
-
+  
 var newsClickHandler = function(event){
     
     var message = (event.target);
