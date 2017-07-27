@@ -27,8 +27,7 @@ var basketClickHandler = function(event){
     event.target.parentElement.remove();
     }
 }   
-var newsClickHandler = function(event){
-    
+var newsClickHandler = function(event){  
     var message = (event.target);
     var inputText = (event.target.previousElementSibling).value;
     item = $("<p>" +   + "</p>")
