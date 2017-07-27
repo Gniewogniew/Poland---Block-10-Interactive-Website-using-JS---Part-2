@@ -14,7 +14,7 @@ body{
 .basket {
   float:right;  
   background-color: #1a88ff;
-  padding:70px 120px 300px 120px;
+  padding:120px;
   min-width:220px;
 }
 .logo-icon{
@@ -28,6 +28,8 @@ body{
 }
 .items{
   font-size:22px;
+  overflow: scroll;
+  height: 340px;
 }
 .items button{
   float:right;
@@ -76,14 +78,14 @@ input {
   padding:60px;
   margin:auto;
 }
-#input-msg{
+#message-input{
   border:2px solid #737373;
   border-radius:15px;
   min-width:400px;
   min-height:20px;
   font-size:15px;
 }
-#submit-btn{
+#message-button{
     padding: 10px;
     border: 1px solid;
     border-radius: 20px;
@@ -91,7 +93,7 @@ input {
     cursor: pointer;
     margin-left: 10px;
 }
-#msg{
+#message{
   border-left: 2px solid #f2f2f2;
   font-size: 20px;
   padding-left:15px; 
